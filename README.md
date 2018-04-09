@@ -4,3 +4,10 @@ Playing around with C#, MSSQL server running on a [Docker](https://www.docker.co
 
 Useful links:
 [1] - [SQL Server running on Mac?](https://medium.com/@reverentgeek/sql-server-running-on-a-mac-3efafda48861)
+
+## How to run
+
+```bash
+#!/bin/bash
+dotnet run <Your-Database-Password> <Your-CSV-File>
+```

@@ -158,6 +158,14 @@ namespace databases {
             return builder.ConnectionString;
         }
 
+        
+        /// How to run: 
+        /// dotnet run <Your-Database-Password> <Your-CSV-File>
+        /// This program reads from a .csv file given 
+        /// as the 2nd command line argument. It reads all the movies 
+        /// from that file, extracts the relevant data, then inserts 
+        /// it into my local MSSQL DB running on Docker.
+        /// 
         static int Main (string[] args) {
             if (args.Length == 0) {
                 Console.WriteLine ("Please enter a textual argument for your database password and a path to your csv file");
